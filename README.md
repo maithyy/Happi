@@ -2,6 +2,7 @@
 
 <p align="center">
 	<img width=200 height=200 src="https://raw.githubusercontent.com/maithyy/Hobbi/main/Hobbi-Frontend/Hobbi/assets/happi_logo.png" alt="Happi Logo" />
+	<img width=200 height=200 src="https://raw.githubusercontent.com/maithyy/Hobbi/main/Hobbi-Frontend/Hobbi/assets/happi_text.png" alt="Happi Logo Text" />
 </p>
 
 
