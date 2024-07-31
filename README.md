@@ -15,11 +15,19 @@
 </p>
 
 
-<b>Happi is a mental and physical health app that recommends activities to do based on user input and data from Apple HealthKit.</b>
+<b>Happi is a mental and physical health app that 
+uses real time health data and user inputted journal entries to recommend exercises and activities to help users meet their goals.</b>
 
 The app provides users an overall score based on 3 metrics:
-- Happiness score determined by the users' journal entry
+- Happiness score determined by Google Cloud Natural Language API's sentiment analysis of the users' journal entry
 - Sleep score determined by hours slept from Apple HealthKit
 - Fitness score determined by user set goals and data from Apple HealthKit
 
-Users can enter in a daily journal entry and receive a happiness score which is deterimined using text sentiment analysis from Google Cloud’s Natural Language API.
+User authentication is done via Firebase and user preferences and goals are stored in Firestore.
+
+
+## Set-up instructions
+1. cd Happi-Frontend
+2. npx expo install --npm
+3. npx expo start --web (if you're on Windows)
+4. npx expo run:ios (if you're on Mac)
