@@ -2,7 +2,6 @@ import { useState } from "react";
 import {
   Text,
   View,
-  Button,
   Pressable,
   KeyboardAvoidingView,
   TextInput,
@@ -24,7 +23,6 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [showEmailMessage, setShowEmailMessage] = useState(false);
 
   const handleSignup = () => {
     navigate("Register");
