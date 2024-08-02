@@ -27,7 +27,12 @@ User authentication is done via Firebase and user preferences and goals are stor
 
 
 ## Set-up instructions
-1. cd Happi-Frontend
+Frontend
+1. cd Happi-Frontend, cd Hobbi
 2. npx expo install --npm
-3. npx expo start --web (if you're on Windows)
-4. npx expo run:ios (if you're on Mac)
+3. npx expo start --web (if you're on Windows) or npx expo run:ios (if you're on Mac)
+
+Backend
+1. cd Happi-Backend
+2. pip install -r requirements.txt
+3. gcloud auth application-default login on google cloud cli
