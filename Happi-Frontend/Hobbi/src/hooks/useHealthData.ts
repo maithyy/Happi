@@ -88,10 +88,6 @@ const useHealthData = () => {
         console.log("Error getting sleep data");
         return;
       }
-      // Results are of type HealthValue[]
-      // Must convert to singular HealthValue that represents sleep (gets longest sleep log)
-
-      // console.log(results);
 
       const filteredResults = results.filter((log) => {
         return typeof log.value === "string" && log.value === "ASLEEP";
@@ -132,9 +128,7 @@ const useHealthData = () => {
         console.log("Error getting workout data");
         return;
       }
-      // const allWorkouts
-      console.log(results.data);
-
+      
       setWorkouts(results);
     });
   }, [hasPermissions]);

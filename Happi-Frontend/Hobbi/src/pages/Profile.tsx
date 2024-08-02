@@ -45,7 +45,7 @@ const equipmentOptions = [{
 
 export default function Profile() {
   const user = getAuth().currentUser;
-  const user_id = user ? user.uid : ""; // TODO: Get user id from auth hook
+  const user_id = user ? user.uid : "";
   const backend_url = "http://127.0.0.1:5000/changeData?";
 
   const {first, last, email, exerciseGoal, skill, equipment, sleepGoal, wakeupTime} = useAllData();

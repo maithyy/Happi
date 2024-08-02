@@ -46,7 +46,7 @@ const useAllData = () => {
     };
   
       fetchData();
-  }, [user_id, triggerRefresh]); // rerun if user_id changes
+  }, [user_id, triggerRefresh]);
 
   return {first, last, email, exerciseGoal, skill, equipment, sleepGoal, wakeupTime, happinessScore, journalEntry, journalDate};
 };

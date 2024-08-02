@@ -14,6 +14,7 @@ import { type StackNavigation } from "../../App";
 import { login } from "../services/auth";
 import { styles } from "../styles";
 import { MaterialCommunityIcons, FontAwesome6 } from "@expo/vector-icons";
+import React from "react";
 
 const Login = () => {
   const { navigate } = useNavigation<StackNavigation>();

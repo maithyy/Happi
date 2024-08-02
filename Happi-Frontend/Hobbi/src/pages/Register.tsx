@@ -16,6 +16,7 @@ import { styles } from "../styles";
 import { type FirebaseError } from "firebase/app";
 import { saveUserData } from "../services/firebaseDatabase";
 import { MaterialCommunityIcons, Ionicons, FontAwesome6 } from "@expo/vector-icons";
+import React from "react";
 
 const Register = () => {
   const { navigate } = useNavigation<StackNavigation>();

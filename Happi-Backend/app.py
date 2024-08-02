@@ -1,12 +1,6 @@
-import helpers
-
 from google.cloud import language_v2
 from flask import Flask, jsonify, request
 from flask_cors import CORS
-import json
-import random
-import string
-
 from dotenv import load_dotenv
 
 import firebase_admin

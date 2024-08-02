@@ -7,6 +7,7 @@ import useHealthData from "../hooks/useHealthData";
 import useSleepData from "../hooks/useSleepData";
 import { styles } from "../styles";
 import { getSleepGrade } from "../utils/scoreUtils";
+import React from "react";
 
 const convertTimeToString = (time: number) => {
   const hours = Math.floor(time);

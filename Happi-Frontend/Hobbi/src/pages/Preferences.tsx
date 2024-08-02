@@ -8,6 +8,7 @@ import { savePreferenceData } from "../services/firebaseDatabase";
 import MultiSelect from 'react-native-multiple-select';
 import DateTimePicker, {type DateTimePickerEvent} from '@react-native-community/datetimepicker';
 import { useAppContext } from "../contexts/AppContext";
+import React from "react";
 
 const levels = [{
   id: '1',
