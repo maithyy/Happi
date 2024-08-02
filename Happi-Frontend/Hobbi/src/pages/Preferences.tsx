@@ -73,7 +73,6 @@ const Preferences = () => {
       const minutes = currentDate.getMinutes();
       const militaryTime = hours + (minutes / 60);
       setWakeupTime(militaryTime);
-      console.log(militaryTime)
     }
   }
 

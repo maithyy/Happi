@@ -4,6 +4,7 @@ import getScores from "../hooks/calculateScores";
 import { styles } from "../styles";
 import * as Progress from 'react-native-progress'; // make sure to install this by doing "npm install react-native-progress --save"
 import { getOverallGrade } from "../utils/scoreUtils";
+import React from "react";
 
 export default function Home() {
   const {sleepScore, exerciseScore, sentimentScore, overallScore, recommendation} = getScores();

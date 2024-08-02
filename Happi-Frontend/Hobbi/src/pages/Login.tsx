@@ -32,17 +32,8 @@ const Login = () => {
   const handleLogin = async () => {
     setIsLoading(true);
     try {
-      console.log(email, password);
       const user = await login(email, password);
       if (user) {
-        // if (!user.emailVerified) {
-        //   console.log("Email not verified");
-        //   setShowEmailMessage(true);
-        //   await emailVerification();
-        //   await logout();
-        //   setIsLoading(false);
-        // }
-        console.log("Logged in", user);
         navigate("Main");
       }
     } catch (error) {

@@ -1,6 +1,6 @@
-import { initializeAuth } from 'firebase/auth';
-// @ts-expect-error Some error with types in this import because of the versions
+// @ts-expect-error
 import { getReactNativePersistence } from '@firebase/auth/dist/rn/index.js';
+import { initializeAuth } from 'firebase/auth';
 import ReactNativeAsyncStorage from '@react-native-async-storage/async-storage';
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";

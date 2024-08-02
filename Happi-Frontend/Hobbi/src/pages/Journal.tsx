@@ -7,6 +7,7 @@ import { getAuth } from "firebase/auth";
 import { useAppContext } from "../contexts/AppContext";
 import getScores from "../hooks/calculateScores";
 import { getJournalGrade } from "../utils/scoreUtils";
+import React from "react";
 
 
 export default function Journal() {
@@ -63,7 +64,6 @@ export default function Journal() {
     fetch(get_url + new URLSearchParams(data))
       .then((res) => res.json())
       .then((response_data) => {
-        console.log(response_data);
         if (response_data.success) {
           setJournal(response_data.data);
           setRecommendation(getRecommendation(response_data.data.score));

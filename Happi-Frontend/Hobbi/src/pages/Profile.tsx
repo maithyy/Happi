@@ -7,6 +7,7 @@ import useAllData from "../hooks/useAllData";
 import { logout } from "../services/auth";
 import { getAuth } from "firebase/auth";
 import { useAppContext } from "../contexts/AppContext";
+import React from "react";
 
 const skillOptions = [{
   id: '1',
